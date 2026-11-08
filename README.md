@@ -1,43 +1,25 @@
 # Multi-Git Manager
 
-Multi-Git Manager is a powerful Visual Studio Code extension designed to streamline your workflow when working with multiple Git repositories within a single workspace.
-
-![Multi-Git Manager](images/multi-git-manager-preview.gif)
+VS Code extension for working with several Git repositories in one workspace.
 
 ## Features
 
-- **Repository Overview**: Get a quick glance at all Git repositories in your workspace.
-- **Bulk Operations**: Perform Git operations (pull, push, fetch) on multiple repositories simultaneously.
-- **Status Monitoring**: Real-time status updates for all your repositories.
-- **Branch Management**: Easy switching and creation of branches across multiple repositories.
-- **Conflict Resolution**: Quickly identify and resolve merge conflicts across repositories.
-- **Customizable Actions**: Define custom Git commands to run on multiple repositories.
+- Overview and live status of all repositories in the workspace
+- Bulk pull, push and fetch
+- Branch switching and creation across repositories
+- Custom Git commands run against multiple repositories
 
 ## Installation
 
-1. Open Visual Studio Code
-2. Press `Ctrl+P` (or `Cmd+P` on macOS) to open the Quick Open dialog
-3. Type `ext install YourPublisherName.multi-git-manager` and press Enter
-
-Or install through the VSCode Marketplace: [Multi-Git Manager](https://marketplace.visualstudio.com/items?itemName=ElanZhou.vscode-multi-git-manager&ssr=false#overview)
+Install from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ElanZhou.vscode-multi-git-manager).
 
 ## Usage
 
-1. Open a workspace containing multiple Git repositories.
-2. Click on the Multi-Git Manager icon in the Activity Bar.
-3. You'll see a list of all Git repositories in your workspace.
-4. Use the toolbar actions to perform bulk operations or click on individual repositories for specific actions.
+1. Open a workspace that contains multiple Git repositories.
+2. Click the Multi-Git Manager icon in the Activity Bar.
+3. Use the toolbar for bulk actions: Refresh, Pull All, Push All, Fetch All. Click a repository for single-repository actions.
 
-### Basic Commands
-
-- **Refresh**: Update the status of all repositories
-- **Pull All**: Pull changes for all repositories
-- **Push All**: Push committed changes for all repositories
-- **Fetch All**: Fetch updates for all repositories
-
-## Configuration
-
-You can customize Multi-Git Manager through VS Code settings. Here are some available options:
+## Settings
 
 ```json
 {
@@ -47,18 +29,11 @@ You can customize Multi-Git Manager through VS Code settings. Here are some avai
 }
 ```
 
-## Known Issues
+## Development
 
-Please refer to our issue tracker for any known issues and to report new ones.
+```bash
+yarn install
+yarn compile    # then press F5 in VS Code to launch the Extension Development Host
+```
 
-## Contributing
-
-We welcome contributions! Please see our [contributing guidelines](CONTRIBUTING.md) for more details.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-**Enjoy managing multiple Git repositories with ease!** If you find Multi-Git Manager helpful, please consider leaving a review on the VS Code Marketplace.
+`LEGAL.md` holds the legal notice. The `python_cli/` directory contains a command-line companion.
